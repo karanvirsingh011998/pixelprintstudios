@@ -41,7 +41,7 @@ export default function Layout() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/pixelprintstudios" className="flex items-center gap-2">
               <Printer className="h-8 w-8" style={{ color: '#DD087F' }} />
               <span className="text-xl font-bold">Pixel Print Studios</span>
             </Link>
@@ -50,11 +50,11 @@ export default function Layout() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             <Link to="/" className={`text-sm ${isActive('/')}`}>Home</Link>
-            <Link to="/about" className={`text-sm ${isActive('/about')}`}>About</Link>
-            <Link to="/services" className={`text-sm ${isActive('/services')}`}>Services</Link>
-            <Link to="/products" className={`text-sm ${isActive('/products')}`}>Products</Link>
-            <Link to="/testimonials" className={`text-sm ${isActive('/testimonials')}`}>Testimonials</Link>
-            <Link to="/contact" className={`text-sm ${isActive('/contact')}`}>Contact</Link>
+            <Link to="/pixelprintstudios/about" className={`text-sm ${isActive('/pixelprintstudios/about')}`}>About</Link>
+            <Link to="/pixelprintstudios/services" className={`text-sm ${isActive('/pixelprintstudios/services')}`}>Services</Link>
+            <Link to="/pixelprintstudios/products" className={`text-sm ${isActive('/pixelprintstudios/products')}`}>Products</Link>
+            <Link to="/pixelprintstudios/testimonials" className={`text-sm ${isActive('/pixelprintstudios/testimonials')}`}>Testimonials</Link>
+            <Link to="/pixelprintstudios/contact" className={`text-sm ${isActive('/pixelprintstudios/contact')}`}>Contact</Link>
             <Button variant="ghost" size="icon" onClick={toggleTheme}>
               {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
             </Button>
